@@ -41,7 +41,7 @@ if ( event.which == 13 ) {
    template.prepend(textAdd);
    //Aggiungo alla todolist nella pagina
    $('.todo-list').append(template);
-
+   $(this).val("");
     }
   }
 }
