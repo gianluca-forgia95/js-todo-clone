@@ -27,3 +27,22 @@ done.click(
     $(this).parent().remove();
   }
 );
+
+//Scrivendo nell'input e premendo invio faccio aggiungere cose da fare all'utente
+
+$('#add').keydown(function(event){
+
+if ( event.which == 13 ) {
+
+  console.log(event);
+  var textAdd = $(this).val();
+  //clono di nuovo il mio template
+  var template = $('.template li').clone();
+  //Aggiungo al template quello che ha digitato l'utente
+  template.prepend(textAdd);
+  //Aggiungo alla todolist nella pagina
+  $('.todo-list').append(template);
+
+  }
+}
+);
