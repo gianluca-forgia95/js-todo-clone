@@ -7,5 +7,14 @@ var toDoList = [
   'Chiamare Francesco'
 ];
 
-var template = $('.template li').clone();
-console.log(template);
+
+//Inizializzo il ciclo for
+for (var i = 0; i < toDoList.length; i++) {
+  //Clono il template
+  var template = $('.template li').clone();
+  //Aggiungo l'array toDoList al template
+  template.prepend(toDoList[i]);
+  //Metto nella todolist  template
+  $('.todo-list').append(template);
+
+}
