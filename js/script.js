@@ -18,3 +18,12 @@ for (var i = 0; i < toDoList.length; i++) {
   $('.todo-list').append(template);
 
 }
+
+//Al click cancello le cose da fare completate
+var done = $('.delete');
+
+done.click(
+  function () {
+    $(this).parent().remove();
+  }
+);
