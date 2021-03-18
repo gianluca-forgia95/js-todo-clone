@@ -6,3 +6,52 @@
 .template {
   display: none;
 }
+body {
+  font-family: 'Roboto Slab', serif;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #7C251B;
+  top: 10%;
+}
+.img-top {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.img-top img {
+  max-width: 500px;
+  margin-top: 40px;
+}
+.title-section {
+  text-align: center;
+  padding: 10px 0;
+  color:#F09D27;
+}
+.todo-list {
+  text-align: center;
+  list-style: none;
+}
+.cross {
+  color: yellow;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.img-left img , .img-right img {
+  max-width: 200px;
+  border-radius: 20%;
+}
+.img-left  {
+  padding-bottom: 50px;
+}
+.input-add {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}

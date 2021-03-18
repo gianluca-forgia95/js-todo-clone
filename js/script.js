@@ -2,9 +2,12 @@
 //Creo un Array di cose da fare
 
 var toDoList = [
-  'Comprare il vino',
-  'Portare fuori il cane',
-  'Chiamare Francesco'
+  'Chiamare amici',
+  'Fare il prepartita',
+  'Cantare fino al 90esimo',
+  'Parcheggiare vicino lo stadio',
+  'Non far arrabbiare Totti e De Rossi',
+
 ];
 
 
@@ -20,20 +23,13 @@ for (var i = 0; i < toDoList.length; i++) {
 }
 
 //Al click cancello le cose da fare completate
-$('.delete').click(
- function () {
-   $(this).parent().remove();
- }
-);
 
- //Rimuovo anche la cosa da fare aggiunta
  $(".todo-list").on("click", ".delete", function(){
      $(this).parent().remove();
  });
 
 
 //Scrivendo nell'input e premendo invio faccio aggiungere cose da fare all'utente
-
 $('#add').keydown(function(event){
 
 if ( event.which == 13 ) {
